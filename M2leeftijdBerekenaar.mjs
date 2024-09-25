@@ -4,9 +4,11 @@ const userInput = readline.createInterface({input, output});
 
 
 let geboorteJaar = await userInput.question('Voer jouw geboortejaar in: ');
+let geboorteJaar = parseFloat(await userInput.question('Voer jouw geboortejaar in: '));
 console.log();
 
 let toekomstJaar = await userInput.question('Voer het toekomstjaar in: ');
+let toekomstJaar = parseFloat(await userInput.question('Voer het toekomstjaar in: '));
 console.log();
 
 let leeftijd = toekomstJaar - geboorteJaar;
